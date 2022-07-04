@@ -43,7 +43,7 @@ public class SDEV425hw1 {
             /*
             * 3. Rule 49: MSC05-J. Do not exhaust heap space 
             * ISSUE: OutOfMemoryError due to reading in large file
-            * FIX: Get filesize using .length() then exit program if file is larger than 10MB
+            * FIX: Get filesize using .length() then exit program if file is larger than maxFileSizeMB
              */
             //GET DIRECTORY WITH EMAIL.TXT AND CHECK FILE SIZE
             String workingDirectory = System.getProperty("user.dir");
