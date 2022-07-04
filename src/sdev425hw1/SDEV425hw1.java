@@ -20,7 +20,9 @@ public class SDEV425hw1 {
 
         /*1. Rule 49: MSC05-J. Do not exhaust heap space 
          * ISSUE: OutOfMemoryError due to reading in entire file
-         * FIX: Replaced BufferedReader with Scanner to more efficiently read file
+         * FIX: Replaced BufferedReader with Scanner to more efficiently read file 
+         * UPDATE: This fix is likely ineffective (but inert). BufferedReader with .legth() would suffice.
+         * SEE: https://stackoverflow.com/questions/2231369/scanner-vs-bufferedreader
          */
         FileInputStream inputStream = null;
         Scanner sc = null;
